@@ -108,6 +108,7 @@ public class ClientesPainel extends JPanel {
 
         apagarButton = new JButton("Apagar");
         apagarButton.setFont(new Font("Arial", Font.PLAIN, 16));
+        apagarButton.setBackground(Color.RED);
 
         // Adicionar configurações semelhantes para os outros botões
 
