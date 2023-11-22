@@ -70,7 +70,7 @@ public class VendasDAO {
     }
 
     // Método para cadastrar uma nova venda no banco de dados
-    public void cadastrar(String data, String cliente, String valor, String carro) {
+    public void cadastrar(String cliente, String data, String carro, String valor) {
         PreparedStatement stmt = null;
 
         String sql = "INSERT INTO vendas_lojacarros (cliente, data, carro, valor) VALUES (?, ?, ?, ?)";

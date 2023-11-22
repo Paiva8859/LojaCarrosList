@@ -269,8 +269,9 @@ public class VendasPainel extends JPanel {
         tableModel.setRowCount(0);
         vendas = new VendasDAO().listAll();
         for (Vendas venda : vendas) {
-            tableModel.addRow(
-                    new Object[] { venda.getCliente(), venda.getData(), venda.getTipoCarro(), venda.getValor() });
+            tableModel.addRow(new Object[] {
+                venda.getCliente(), venda.getData(), venda.getTipoCarro(), venda.getValor()
+            });
         }
     }
 
